@@ -1,0 +1,28 @@
+{
+    "datacenter":"dc1",
+    "primary_datacenter":"dc1",
+    "advertise_addr":  "172.16.0.72",
+    "bind_addr": "172.16.0.72",
+    "server":true,
+    "connect":{
+        "enabled":true
+    },
+    "node_name":"consul-server2",
+    "data_dir":"/opt/consul/data/",
+    "enable_script_checks":false,
+    "enable_local_script_checks":true,
+    "log_file":"/opt/consul/log/",
+    "log_level":"info",
+    "log_rotate_bytes":100000000,
+    "log_rotate_duration":"24h",
+    "encrypt":"eWxzoFalyulNjRRodLXH/Q==",
+    "acl":{
+        "enabled":true,
+        "default_policy":"deny",
+        "enable_token_persistence":true,
+        "tokens":{
+            "master":"xxx",
+	    "agent":"2fc1cd01-3287-60f1-1f8f-45098bcc18c0"
+        }
+    }
+}
